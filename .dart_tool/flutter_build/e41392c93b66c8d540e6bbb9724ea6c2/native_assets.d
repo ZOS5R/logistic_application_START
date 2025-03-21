@@ -1,0 +1,1 @@
+ /Users/mowaterapp/Downloads/logistic_application-main/.dart_tool/flutter_build/e41392c93b66c8d540e6bbb9724ea6c2/native_assets.yaml: 
