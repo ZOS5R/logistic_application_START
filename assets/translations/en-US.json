@@ -1,1 +1,26 @@
-{}
+{
+  "My profile": "My Profile",
+  "Contact Information": "Contact Information",
+  "Performance Statistics": "Performance Statistics",
+  "Job Information": "Job Information",
+  "Rating and Performance": "Rating and Performance",
+  "Attendance": "Attendance",
+  "Requests": "Requests",
+  "Points and Rewards": "Points and Rewards",
+  "Achievements": "Achievements",
+  "Points Balance": "Points Balance",
+  "Overtime Hours:": "Overtime Hours:",
+  "Attendance Summary (Days for this Month)": "Attendance Summary (Days for this Month)",
+  "Day": "Day",
+  "Date": "Date",
+  "Check-in": "Check-in",
+  "Check-out": "Check-out",
+  "Status": "Status",
+  "personal info": "Personal Information",
+  "full name": "Full Name",
+  "date of birth": "Date of Birth",
+  "gender": "Gender",
+  "nationality": "Nationality",
+  "marital status": "Marital Status",
+  "Edit": "Edit"
+}

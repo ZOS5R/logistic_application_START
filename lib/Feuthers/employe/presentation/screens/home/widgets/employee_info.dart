@@ -1,40 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:logistic_app/core/widgets/spacing.dart';
+import 'package:go_router/go_router.dart'; // Make sure this is imported for navigation
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:logistic_app/core/router/rotue_names.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 Widget buildInfoGrid(BuildContext context) {
   final List<Map<String, dynamic>> items = [
     {
-      'title': 'Personal Information',
-      'icon': Icons.person,
-      'path': '/personalInfo'
+      'title': 'My profile'.tr(),
+      'icon': Icons.person_outline,
+      'path': RouteNames.personalInfo
     },
     {
-      'title': 'Contact Information',
-      'icon': Icons.contact_phone,
-      'path': '/contactInfo'
+      'title': 'Contact Information'.tr(),
+      'icon': Icons.mail_outline,
+      'path': RouteNames.contactInfo
     },
     {
-      'title': 'Performance and Credit Statistics',
-      'icon': Icons.bar_chart,
-      'path': '/performanceStats'
-    },
-    {'title': 'Job Information', 'icon': Icons.business, 'path': '/jobInfo'},
-    {
-      'title': 'Evaluations and Performance',
-      'icon': Icons.star,
-      'path': '/evaluations'
+      'title': 'Performance Statistics'.tr(),
+      'icon': Icons.assessment,
+      'path': RouteNames.statistics
     },
     {
-      'title': 'Attendance and Departure Record',
-      'icon': Icons.access_time,
-      'path': '/attendance'
+      'title': 'Job Information'.tr(),
+      'icon': Icons.work_outline,
+      'path': RouteNames.jobInfo
     },
-    {'title': 'Requests', 'icon': Icons.list, 'path': '/requests'},
     {
-      'title': 'Points and Rewards',
-      'icon': Icons.gamepad,
-      'path': '/pointsRewards'
+      'title': 'Rating and Performance'.tr(),
+      'icon': Icons.check_circle_outline,
+      'path': RouteNames.performanceStats
+    },
+    {
+      'title': 'Attendance'.tr(),
+      'icon': Icons.schedule,
+      'path': RouteNames.attendance
+    },
+    {
+      'title': 'Requests'.tr(),
+      'icon': Icons.assignment,
+      'path': RouteNames.requests
+    },
+    {
+      'title': 'Points and Rewards'.tr(),
+      'icon': Icons.local_offer,
+      'path': RouteNames.pointsRewards
     },
   ];
 
@@ -63,7 +73,7 @@ Widget buildInfoCard(
     ),
     child: InkWell(
       onTap: () {
-        context.go(path);
+        context.push(path);
       },
       child: Container(
         padding: EdgeInsets.all(16.0),
@@ -84,17 +94,15 @@ Widget buildInfoCard(
             Icon(
               icon,
               size: 35,
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.surface,
             ),
-            const SpaceH(num: 10),
-            Text(
-              title,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
-            ),
+            const SizedBox(height: 10), // Replace SpaceH with SizedBox
+            Text(title,
+                textAlign: TextAlign.center,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium!
+                    .copyWith(color: Theme.of(context).colorScheme.surface)),
           ],
         ),
       ),

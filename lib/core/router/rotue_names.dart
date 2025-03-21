@@ -14,7 +14,7 @@ abstract class RouteNames {
   static const String contactInfo = '/contactInfo';
   static const String performanceStats = '/performanceStats';
   static const String jobInfo = '/jobInfo';
-  static const String evaluations = '/evaluations';
+  static const String statistics = '/statistics';
   static const String attendance = '/attendance';
   static const String requests = '/requests';
   static const String pointsRewards = '/pointsRewards';

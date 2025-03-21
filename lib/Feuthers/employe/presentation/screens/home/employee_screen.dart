@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:logistic_app/Feuthers/employe/presentation/widgets/employee_header.dart';
-import 'package:logistic_app/Feuthers/employe/presentation/widgets/employee_info.dart';
+import 'package:logistic_app/Feuthers/employe/presentation/screens/home/widgets/employee_header.dart';
+import 'package:logistic_app/Feuthers/employe/presentation/screens/home/widgets/employee_info.dart';
 
 class EmployeeHome extends StatelessWidget {
   const EmployeeHome({super.key});
