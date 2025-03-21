@@ -32,6 +32,7 @@ void main() async {
   );
   //test
 }
+
 // Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ScreenUtil.init(context);
 
-//test 
+//test
 
     return BlocProvider(
       create: (_) => ManagerCubit(),

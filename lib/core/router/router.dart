@@ -5,6 +5,7 @@ import 'package:logistic_app/Feuthers/auth/presentation/screen/sign_in_screen.da
 import 'package:logistic_app/Feuthers/driver/presentation/screens/driver_home_screen.dart';
 import 'package:logistic_app/Feuthers/driver/presentation/screens/map_screen.dart';
 import 'package:logistic_app/Feuthers/driver/presentation/screens/order_details_screen.dart';
+import 'package:logistic_app/Feuthers/employe/presentation/screens/employee_screen.dart';
 import 'package:logistic_app/core/di/di.dart';
 import 'package:logistic_app/core/router/rotue_names.dart';
 import 'package:logistic_app/core/router/transaction.dart';
@@ -30,7 +31,14 @@ abstract class GoRouterApp {
           }),
 
       // DRiVER
-
+      GoRoute(
+          path: RouteNames.employeeHome,
+          pageBuilder: (
+            context,
+            state,
+          ) {
+            return CustomSlideTransition(child: EmployeeHome());
+          }),
       GoRoute(
           path: RouteNames.driverHome,
           pageBuilder: (
@@ -53,7 +61,7 @@ abstract class GoRouterApp {
             context,
             state,
           ) {
-            return CustomSlideTransition(child:   GoogleMapScreen());
+            return CustomSlideTransition(child: GoogleMapScreen());
           }),
     ],
   );

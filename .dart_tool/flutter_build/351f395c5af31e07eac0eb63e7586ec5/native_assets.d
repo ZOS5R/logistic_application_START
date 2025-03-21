@@ -1,0 +1,1 @@
+ C:\\flutter\ projects\\logistic_application\\.dart_tool\\flutter_build\\351f395c5af31e07eac0eb63e7586ec5\\native_assets.yaml: 
