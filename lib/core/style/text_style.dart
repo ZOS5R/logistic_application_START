@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart'; // Assuming you're us
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+  
 class TextStyles {
   static TextStyle getTextStyle(BuildContext context, double size,
       {FontWeight? weight}) {

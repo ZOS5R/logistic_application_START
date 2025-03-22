@@ -1,3 +1,26 @@
 {
-    
+  "My profile": "ملفي الشخصي",
+  "Contact Information": "معلومات الاتصال",
+  "Performance Statistics": "إحصائيات الأداء",
+  "Job Information": "معلومات الوظيفة",
+  "Rating and Performance": "تقييم وأداء",
+  "Attendance": "الحضور",
+  "Requests": "طلبات",
+  "Points and Rewards": "نقاط ومكافآت",
+  "Achievements": "الإنجازات",
+  "Points Balance": "رصيد النقاط",
+  "Overtime Hours:": "عدد ساعات العمل الإضافي:",
+  "Attendance Summary (Days for this Month)": "ملخص الحضور (الأيام لهذا الشهر)",
+  "Day": "اليوم",
+  "Date": "التاريخ",
+  "Check-in": "الدخول",
+  "Check-out": "الخروج",
+  "Status": "الحالة",
+  "personal info": "المعلومات الشخصية",
+  "full name": "الاسم الكامل",
+  "date of birth": "تاريخ الميلاد",
+  "gender": "الجنس",
+  "nationality": "الجنسية",
+  "marital status": "الحالة الاجتماعية",
+  "Edit": "تعديل"
 }

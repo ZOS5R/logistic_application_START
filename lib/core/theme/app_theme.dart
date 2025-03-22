@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 
+class ThemeHelper {
+  final BuildContext context;
+  late final ThemeData theme;
+  late final ColorScheme colors;
+
+  ThemeHelper(this.context) {
+    theme = Theme.of(context);
+    colors = theme.colorScheme;
+  }
+}
+
 class AppTheme {
   // Light ColorScheme
   static ColorScheme lightColorScheme = const ColorScheme(

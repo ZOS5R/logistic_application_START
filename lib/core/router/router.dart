@@ -13,6 +13,7 @@ import 'package:logistic_app/Feuthers/employe/presentation/screens/profile/profi
 import 'package:logistic_app/Feuthers/employe/presentation/screens/rating_and_performance/performance_screen.dart';
 import 'package:logistic_app/Feuthers/employe/presentation/screens/requests/requests_screen.dart';
 import 'package:logistic_app/Feuthers/employe/presentation/screens/rewards/rewards_screen.dart';
+import 'package:logistic_app/Feuthers/employe/presentation/screens/rewards/widgets/exchange_screen.dart';
 import 'package:logistic_app/Feuthers/employe/presentation/screens/statistics_and_points/statistics_state_screen.dart';
 import 'package:logistic_app/core/di/di.dart';
 import 'package:logistic_app/core/router/rotue_names.dart';
@@ -38,7 +39,7 @@ abstract class GoRouterApp {
             ));
           }),
 //Employee
- GoRoute(
+      GoRoute(
           path: RouteNames.employeeHome,
           pageBuilder: (
             context,
@@ -91,7 +92,7 @@ abstract class GoRouterApp {
             context,
             state,
           ) {
-            return CustomSlideTransition(child: PerformanceStatsScreen());
+            return CustomSlideTransition(child: PerformanceScreen());
           }),
       //4
       GoRoute(
@@ -131,21 +132,21 @@ abstract class GoRouterApp {
           }),
       //8
       GoRoute(
-          path: RouteNames.performanceStats,
-          pageBuilder: (
-            context,
-            state,
-          ) {
-            return CustomSlideTransition(child: PerformanceStatsScreen());
-          }),
-      //9
-      GoRoute(
           path: RouteNames.pointsRewards,
           pageBuilder: (
             context,
             state,
           ) {
             return CustomSlideTransition(child: PointsRewardsScreen());
+          }),
+      //9
+      GoRoute(
+          path: RouteNames.exchange,
+          pageBuilder: (
+            context,
+            state,
+          ) {
+            return CustomSlideTransition(child: ExchangePage());
           }),
 
       // DRiVER

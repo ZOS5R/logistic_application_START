@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:logistic_app/Feuthers/driver/presentation/widgets/app_bar.dart';
 import 'package:logistic_app/core/widgets/spacing.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -8,23 +9,8 @@ class StatisticsStateScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Performance Statistics'.tr(),
-          style: Theme.of(context)
-              .textTheme
-              .titleLarge!
-              .copyWith(color: Theme.of(context).colorScheme.onPrimary),
-        ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Theme.of(context).colorScheme.onPrimary,
-          ),
-          onPressed: () => context.pop(),
-        ),
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        elevation: 4.0,
+      appBar: CustomAppBar(
+        title: 'Performance Statistics',
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
